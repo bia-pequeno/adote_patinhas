@@ -1,0 +1,485 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fontes/Montserrat/static/Montserrat-Regular.ttf);
+  }
+  .fonten {
+    font-family: montserrat;
+  }
+  
+  @font-face {
+    font-family: montserratalt;
+    src: url(../fontes/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+  }
+  .fonteo {
+    font-family: montserratalt;
+  }
+
+/* Variáveis */
+:root {
+    --cor-primaria-marrom: #EBBA7E;
+    --cor-secundaria-branca: #FFFFFF; 
+    --cor-terciaria-azul: #9AE1D4;
+    --cor-quartenaria-laranja: #FF7E33;
+    --cor-quintenaria-bege: #EFD1AC;
+    --cor-quintenaria-bege2: #E7B77C;
+    --cor-background: #F0F2F2;
+    --cor-fonte-titulos-texto1: #0A1E26;
+    --cor-fonte-titulos2: #F25C05;
+    --cor-fonte-titulos3: #03997E;
+    --cor-fonte-texto1: #FFFFFF;
+    --cor-fonte-hover: #ce9b5d;
+    --cor-fonte-botoes1: #FF7E33;
+    --cor-fonte-botoes2: #04BF9D;
+    --poppins-font: "Poppins", sans-serif;
+    --Montserrat-Alternates-font:"Montserrat Alternates", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../img/arrow-pointer-solid.svg), default;
+    text-decoration: none;
+    /* background-color: var(--cor-background); */
+
+}
+/* ------------------------------Reginaldo---------------------------------*/
+header {
+    width: 100%;
+    /* background-color: #efbf84; */
+    height: 90px;
+    /* box-shadow: 0px 5px 8px #836745; */
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px 10px 15px;
+  }
+  header a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #seta_b {
+    margin-left: 5px;
+  }
+  #casa {
+    margin-right: 5px;
+  }
+  header a:hover {
+    cursor: url(../img/paw-solid.svg), default;
+    background-color: rgb(206, 155, 93);
+    transition: all 0.5s;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+  }
+  ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #logo {
+    width: 173px;
+    object-fit: contain;
+  }
+  #menusus {
+    position: absolute;
+    width: 165px;
+    height: 163px;
+    background-color: #efbf84;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 1;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 0px 0px 10px 10px;
+    visibility: hidden;
+  }
+  #c1 {
+    margin-right: 5px;
+  }
+  #menusus a {
+    width: 100%;
+    height: 40%;
+    border-radius: 0px;
+    padding: 0px;
+    border-top: 1px solid #d4a872cc;
+    box-sizing: border-box;
+  }
+  #dog:hover {
+    border-radius: 0px 0px 10px 10px;
+  }
+  /*-----------------------------Beatriz------------------------------*/
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-background);
+}
+.left{
+    position: relative;
+    background-color: var(--cor-background);
+    width: 50%;
+    height: 90vh;
+    background-image: url(/img/rastro_patinhas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.right{
+    position: relative;
+    background-color: var(--cor-primaria-marrom);
+    width: 50%;
+    height: 90vh;
+    background-image: url(/img/rastro_patinhas2.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.dogbored{
+    position: absolute;
+    background-color: transparent;
+    margin-top: 44vh;
+        img{
+        background-color: transparent;
+        width: 100%;
+        margin-left: -12vw;
+    }
+}
+.conteudo{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    h1{
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4em;
+         filter: drop-shadow(-7px 2px 7px rgba(0, 0, 0, 0.3)); /* propriedade para mexer na sombra do texto */
+        background-color: transparent;
+        padding: 8vh;
+    }
+    span{
+        background-color: transparent;
+        color: var(--cor-fonte-titulos2);
+        font-weight: 700;
+    }
+
+}
+.conteudo2{
+    background-color: transparent;
+    .botoes{
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -9vh;
+        
+    }
+
+    .bt1{
+        background-color: var(--cor-fonte-botoes1);
+        height: 30px;
+        width: 15vw;
+        border-radius: 20px;
+        border: none;
+        color: var(--cor-fonte-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: italic;
+        margin-bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .icone_botao{
+            background-color: transparent;
+            width: 1.5vw;
+        }
+    }
+    .bt2{
+        background-color: var(--cor-fonte-botoes2);
+        height: 30px;
+        width: 10vw;
+        border-radius: 20px;
+        border: none;
+        color: var(--cor-fonte-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+.part2{
+    background-image: url(/img/Group\ 85.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 58vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-background);
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textos{
+    width: 75vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        color: var(--cor-fonte-titulos-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2em;
+    }
+    h2{
+        color: var(--cor-fonte-titulos3);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3.3em;
+    }
+}
+.part3{
+  width: 100%;
+  height: 35vh;
+  background-image: url(/img/banner.png);
+  background-size: 100vw 36vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  .banner{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    .banner-texto{
+      color: var(--cor-fonte-texto1);
+      font-family: var(--Montserrat-Alternates-font);
+      h3{
+        font-size: 2.4em;
+        font-weight: 500;
+      }
+      p{
+        font-size: 1.2em;
+      }
+    }
+    
+  }
+}
+
+  /*-----------------------------Footer-Reginaldo--------------------------------*/
+  footer {
+    background-color: var(--cor-background);
+  }
+  #foo {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger; 
+    background-color: var(--cor-quintenaria-bege);
+    border-radius: 125px 125px 0px 0px;
+  }
+  #foo a {
+    text-decoration: none;
+    color: var(--cor-fonte-titulos-texto1);
+    width: fit-content;
+  }
+  #foo a:hover {
+    text-decoration: underline;
+  }
+  #doguin {
+    width: 300px;
+  }
+  #redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  #redes img {
+    width: 30px;
+  }
+  #logofooter {
+    width: 200px;
+  }
+  #sobre {
+    margin-top: 30px;
+    font-size: large;
+  }
+  .footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #coluna1 {
+    align-items: center;
+    margin-top: 35px;
+  }
+  #coluna2 {
+    margin-top: 47px;
+    height: 115px;
+  }
+  #coluna3 {
+    margin-top: 47px;
+    height: 150px;
+  }
+  #coluna4 {
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+  #coluna4 a {
+    margin-top: 8px;
+  }
+  #Copyright {
+    background-color: var(--cor-quintenaria-bege2);
+    color: var(--cor-fonte-texto1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+/*--------------------------------MOBILE-----------------------------*/
+  @media screen and (max-width: 800px){
+    header{
+      #logo{
+        width: 125px;
+      }
+      nav{
+        display: none;
+      }
+      
+    }
+    .part1{
+      height: 90vh;
+  }
+  .left{
+    width: 100%;
+    background-size: 31vh;
+}  
+.conteudo{
+  width: 350px;
+  display: flex;
+  align-items: center;
+   h1{
+      font-size: 2.8em;
+      text-align: center;
+      line-break: anywhere;
+      width: 430px;
+    }
+    span{
+      font-size: 2em;
+    }
+} 
+.conteudo2{
+  .botoes{
+    align-items: center;
+  }
+
+  .bt1{
+    height: 40px;
+    width: 62vw;
+  }
+  .bt2{
+    height: 40px;
+    width: 40vw;
+  }
+}
+    .right{
+      visibility: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 250px;
+    }
+    .dogbored{
+      visibility: visible;
+      display: flex;
+      width: 0%;
+      justify-content: center;
+      img{
+        width: 120vw;
+        margin-right: 56vw;
+
+      }
+
+    }
+    .part2{
+      height: 85vh;
+      .info{
+        width: 100%;
+      }
+      .textos{
+        p{
+          font-size: 1.8em;
+          width: 100%;
+        }
+      }
+    }
+    .part3{
+      background-size: 100vw 22vh;
+      height: 22vh;
+      .banner{
+        .banner-texto{
+            h3{
+              font-size: 1.9em;
+            }
+            p{
+              font-size: 0.9em;
+            }        
+          }        
+      }
+
+
+    }      
+
+    footer{
+      display: none;
+    }
+  }
+
+  /* -------------------scroll da pag----------------------------------*/
+body::-webkit-scrollbar {
+    width: 5px; /* largura dentro do scrollbar */
+    
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--cor-background);/* cor da área de rastreamento*/
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 20px;/* arredondamento do scroll thumb */
+    border: 3px solid var(--cor-primaria-marrom);  /* cria preenchimento ao redor do scroll thumb */
+  }
+
+ 
