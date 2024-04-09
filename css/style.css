@@ -626,7 +626,109 @@ header {
     align-items: center;
     padding-left: 20px;
   }
+/*--------------------------------TABLET-----------------------------*/
+@media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1023px){
+    header{
+      visibility: hidden;
+    }
+    .part1{
+      height: 90vh;
+  }
+  .left{
+    width: 100%;
+    background-size: 35vh;
+    background-position-y: 0px;
 
+}  
+.conteudo{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  br{
+    display: flex;
+  }
+   h1{
+    /* display: none; */
+      font-size: 2.8em;
+      text-align: center;
+    }
+    span{
+      font-size: 2em;
+    }
+} 
+.conteudo2{
+  .botoes{
+    align-items: center;
+  }
+
+  .bt1{
+    height: 40px;
+    width: 40vw;
+    font-size: 1.2em;
+    .icone_botao{
+      width: 3vw;
+  }
+  }
+  .bt2{
+    height: 40px;
+    width: 23vw;
+    font-size: 1.2em;
+    margin-bottom: 20vh;
+  }
+}
+    .right{
+      visibility: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 320px;
+    }
+    .dogbored{
+      visibility: visible;
+      display: flex;
+      width: 0%;
+      justify-content: center;
+      img{
+        width: 104vw;
+        margin-right: 60vw;
+
+      } 
+    }
+
+    .part2{
+      height: 85vh;
+      .info{
+        width: 100%;
+      }
+      .textos{
+        p{
+          font-size: 3em;
+          width: 100%;
+          margin-top: revert;
+        }
+      }
+    }
+    .part3{
+      background-size: 100vw 22vh;
+      height: 22vh;
+      .banner{
+        .banner-texto{
+            h3{
+              font-size: 2.9em;
+            }
+            p{
+              font-size: 1.5em;
+            }        
+          }        
+      }
+    }      
+
+    footer{
+      display: none;
+    }
+  }
+  } 
 /*--------------------------------MOBILE-----------------------------*/
 @media only screen and (max-width: 767px){
     header{
