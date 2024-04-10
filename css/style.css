@@ -1,0 +1,996 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  .fonten {
+    font-family: var(--Montserrat-Alternates-font);
+  }
+  
+  .fonteo {
+    font-family: var(--Montserrat-Alternates-font);
+  }
+/* Variáveis */
+:root {
+    --cor-primaria-marrom: #EBBA7E;
+    --cor-secundaria-branca: #FFFFFF; 
+    --cor-terciaria-azul: #9AE1D4;
+    --cor-quartenaria-laranja: #FF7E33;
+    --cor-quintenaria-bege: #EFD1AC;
+    --cor-quintenaria-bege2: #E7B77C;
+    --cor-background: #F0F2F2;
+    --cor-fonte-titulos-texto1: #0A1E26;
+    --cor-fonte-titulos2: #F25C05;
+    --cor-fonte-titulos3: #03997E;
+    --cor-fonte-texto1: #FFFFFF;
+    --cor-fonte-hover: #ce9b5d;
+    --cor-fonte-botoes1: #FF7E33;
+    --cor-fonte-botoes2: #04BF9D;
+    --cor-card-flip:#F28D52;
+    --poppins-font: "Poppins", sans-serif;
+    --Montserrat-Alternates-font:"Montserrat Alternates", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../img/arrow-pointer-solid.svg), default;
+    text-decoration: none;
+    /* background-color: var(--cor-background); */
+
+}
+/* ------------------------------Reginaldo---------------------------------*/
+header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px 10px 15px;
+    padding: 10px 5px 10px 15px;
+    background-image: url(/img/Home\ -\ part\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 5px rgba(131, 103, 69, 0.582);
+  }
+  header a {
+    text-decoration: none;
+    color: var(--cor-fonte-titulos-texto1);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #seta_b {
+    margin-left: 5px;
+  }
+  #casa {
+    margin-right: 5px;
+  }
+  header a:hover {
+    cursor: url(../img/paw-solid.svg), default;
+    background-color: var( --cor-fonte-hover);
+    transition: all 0.5s;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+  }
+  ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #logo {
+    width: 173px;
+    object-fit: contain;
+  }
+  #menusus {
+    position: absolute;
+    width: 165px;
+    height: 163px;
+    background-color:var(--cor-primaria-marrom);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 1;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 0px 0px 10px 10px;
+    visibility: hidden;
+  }
+  #c1 {
+    margin-right: 5px;
+  }
+  #menusus a {
+    width: 100%;
+    height: 40%;
+    border-radius: 0px;
+    padding: 0px;
+    border-top: 1px solid #d4a872cc;
+    box-sizing: border-box;
+  }
+  #dog:hover {
+    border-radius: 0px 0px 10px 10px;
+  }
+  /*-----------------------------Beatriz------------------------------*/
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-background);
+}
+.left{
+    position: relative;
+    background-color: var(--cor-background);
+    width: 50%;
+    height: 90vh;
+    background-image: url(/img/rastro_patinhas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 21px;
+}
+.right{
+    position: relative;
+    background-color: var(--cor-primaria-marrom);
+    width: 50%;
+    height: 90vh;
+    background-image: url(/img/rastro_patinhas2.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: 97px;
+}
+.dogbored{
+    position: absolute;
+    background-color: transparent;
+    margin-top: 44vh;
+        img{
+        background-color: transparent;
+        width: 100%;
+        margin-left: -12vw;
+    }
+}
+.conteudo{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    br{
+      display: none;
+    }
+    h1{
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4em;
+         filter: drop-shadow(-7px 2px 7px rgba(0, 0, 0, 0.3)); /* propriedade para mexer na sombra do texto */
+        background-color: transparent;
+        padding: 8vh;
+    }
+    span{
+        background-color: transparent;
+        color: var(--cor-fonte-titulos2);
+        font-weight: 700;
+    }
+
+}
+.conteudo2{
+    background-color: transparent;
+    .botoes{
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -9vh;
+        
+    }
+
+    .bt1{
+        background-color: var(--cor-fonte-botoes1);
+        height: 30px;
+        width: 15vw;
+        border-radius: 20px;
+        border: none;
+        color: var(--cor-fonte-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: italic;
+        margin-bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .icone_botao{
+            background-color: transparent;
+            width: 1.5vw;
+        }
+    }
+    .bt2{
+        background-color: var(--cor-fonte-botoes2);
+        height: 30px;
+        width: 10vw;
+        border-radius: 20px;
+        border: none;
+        color: var(--cor-fonte-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+.part2{
+    background-image: url(/img/Group\ 85.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 58vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-background);
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textos{
+    width: 75vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        color: var(--cor-fonte-titulos-texto1);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2em;
+    }
+    h2{
+        color: var(--cor-fonte-titulos3);
+        font-family: var(--Montserrat-Alternates-font);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3.3em;
+    }
+}
+.part3{
+  width: 100%;
+  height: 35vh;
+  background-image: url(/img/banner.png);
+  background-size: 100vw 36vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  .banner{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    .banner-texto{
+      color: var(--cor-fonte-texto1);
+      font-family: var(--Montserrat-Alternates-font);
+      h3{
+        font-size: 2.4em;
+        font-weight: 500;
+      }
+      p{
+        font-size: 1.2em;
+      }
+    }
+    
+  }
+}
+  /*-----------------------------Gabriel--------------------------------*/
+.part4{
+  width: 100%;
+  height: 90vh;
+  background-color:var(--cor-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 60%;
+  height: 50vh;
+
+  border-radius: 5px;
+  perspective: 150em; /* Adicionado para efeito de perspectiva */
+  position: relative; /* Adicionado para posicionar os botões */
+}
+
+/* Este contêiner é necessário para posicionar a frente e o verso */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+
+/* Faça um giro horizontal ao mover o mouse sobre o contêiner da caixa de virar */
+.flip-card.flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Posicione a frente e o verso */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px; 
+}
+
+.flip-card-front {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  border-radius: 20px;
+  background-color: #04BF9D;
+  justify-content: space-around;
+  align-items: center;
+    h1{
+      font-family: var(--Montserrat-Alternates-font);
+      font-size: 5em;
+      font-weight: 700;
+      text-align: left;
+      color: var(--cor-fonte-texto1)
+    }
+
+    .direita{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2{
+        font-family: var(--Montserrat-Alternates-font);
+        font-size: 1.3em;
+        text-align: left;
+        font-weight: 600;
+        color:var(--cor-fonte-texto1)
+      }
+    }
+    #flip-to-back{
+      width: 300px;
+      height: 6vh;
+
+      margin-top: 4vh;
+      border-radius: 20px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 20px 2px;
+      background-color: var(--cor-fonte-titulos2);
+      color:var(--cor-fonte-texto1);
+      font-family: var(--Montserrat-Alternates-font);
+      font-size: 1.2em;
+    }
+}
+
+/*Estilize a parte de trás */
+.flip-card-back {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--cor-card-flip);
+  color:  var(--cor-fonte-texto1);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+    .esquerda{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:4vh;
+      text-align: left;
+      h1 {
+        font-family: var(--Montserrat-Alternates-font);
+        font-size: 2.5em;
+        
+      }
+      h2{
+        font-family: var(--Montserrat-Alternates-font);
+        font-size: 2em;
+      }
+    }
+    
+    p {
+      font-family: var(--Montserrat-Alternates-font);
+      font-size: 4em;
+      font-weight: 600; 
+    }
+    
+    .qr_code{
+      display: flex;
+      flex-direction: column;
+      h2{
+        font-family: var(--Montserrat-Alternates-font);
+        font-size: 1.5em;
+      }
+      
+      img {
+        width: 250px;
+        height: 250px;
+        margin-top: 1.5vh;
+      }
+      
+    }   
+
+}
+
+.flip-button {
+  margin-right: 10px;
+  transition: opacity 1ms; /* Adicionado para suavizar a transição */
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--cor-fonte-titulos2);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 20px 2px;
+  
+}
+
+.flip-card.flip .flip-card-front .flip-button,
+.flip-card.flip .flip-card-back .flip-button {
+  opacity: 0;
+  pointer-events: none; /* Impede a interação com o botão escondido */
+}
+
+.parte5{
+  width: 100%;
+  height: 250vh;
+  /* height: 333vh; */
+  background-color: var(--cor-background) ;
+  .conteudo3{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    
+    .Titulo{
+      font-family: var(--Montserrat-Alternates-font);
+      font-size: 3em;
+      font-weight: 600;
+      margin-bottom:  12vh;
+    }
+  
+    #linha1 , #linha2 ,  #linha3 {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      font-family: var(--poppins-font);
+      gap: 15vw;
+    
+      img{
+        width: 480px;
+      }
+    }
+
+    #linha2{
+      text-align: right;
+    }
+
+    p{
+      font-size: 1.8em;
+      font-weight: 500;
+    }
+
+
+  }
+  .zig-zag{
+    width: 200px;
+  }
+  
+  .zig-zag2{
+    display: none;
+  }
+  
+}
+
+.parte6{
+  width: 100%;
+  height: 60vh;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-background);
+
+  h1{
+    font-family: var(--Montserrat-Alternates-font);
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--cor-fonte-titulos3);
+    margin-bottom: 5vh;
+  }
+
+  .parceiros{
+    position: relative;
+      display: flex;
+    }
+
+    .ongs{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+     
+      align-items: center;
+      img{
+        
+        width: 200px;
+        height: 200px;
+      }
+      
+      p{
+        width: 200px;
+        font-family: var(--poppins-font);
+        font-size: 1.5em;
+        font-weight: 600;
+        color: var(--cor-fonte-titulos2);
+        text-align: center;
+
+      }
+    }
+}
+
+
+  /*-----------------------------Footer-Reginaldo--------------------------------*/
+  footer {
+    background-color: var(--cor-background);
+  }
+  #foo {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger; 
+    background-color: var(--cor-quintenaria-bege);
+    border-radius: 125px 125px 0px 0px;
+  }
+  #foo a {
+    text-decoration: none;
+    color: var(--cor-fonte-titulos-texto1);
+    width: fit-content;
+  }
+  #foo a:hover {
+    text-decoration: underline;
+  }
+  #doguin {
+    width: 300px;
+  }
+  #redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  #redes img {
+    width: 30px;
+  }
+  #logofooter {
+    width: 200px;
+  }
+  #sobre {
+    margin-top: 30px;
+    font-size: large;
+  }
+  .footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #coluna1 {
+    align-items: center;
+    margin-top: 35px;
+  }
+  #coluna2 {
+    margin-top: 47px;
+    height: 115px;
+  }
+  #coluna3 {
+    margin-top: 47px;
+    height: 150px;
+  }
+  #coluna4 {
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+  #coluna4 a {
+    margin-top: 8px;
+  }
+  #Copyright {
+    background-color: var(--cor-quintenaria-bege2);
+    color: var(--cor-fonte-texto1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+/*--------------------------------TABLET-----------------------------*/
+@media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1023px){
+    header{
+      visibility: hidden;
+    }
+    .part1{
+      height: 90vh;
+  }
+  .left{
+    width: 100%;
+    background-size: 35vh;
+    background-position-y: 0px;
+
+}  
+.conteudo{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  br{
+    display: flex;
+  }
+   h1{
+    /* display: none; */
+      font-size: 2.8em;
+      text-align: center;
+    }
+    span{
+      font-size: 2em;
+    }
+} 
+.conteudo2{
+  .botoes{
+    align-items: center;
+  }
+
+  .bt1{
+    height: 40px;
+    width: 40vw;
+    font-size: 1.2em;
+    .icone_botao{
+      width: 3vw;
+  }
+  }
+  .bt2{
+    height: 40px;
+    width: 23vw;
+    font-size: 1.2em;
+    margin-bottom: 20vh;
+  }
+}
+    .right{
+      visibility: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 320px;
+    }
+    .dogbored{
+      visibility: visible;
+      display: flex;
+      width: 0%;
+      justify-content: center;
+      img{
+        width: 104vw;
+        margin-right: 60vw;
+
+      } 
+    }
+
+    .part2{
+      height: 85vh;
+      .info{
+        width: 100%;
+      }
+      .textos{
+        p{
+          font-size: 3em;
+          width: 100%;
+          margin-top: revert;
+        }
+      }
+    }
+    .part3{
+      background-size: 100vw 22vh;
+      height: 22vh;
+      .banner{
+        .banner-texto{
+            h3{
+              font-size: 2.9em;
+            }
+            p{
+              font-size: 1.5em;
+            }        
+          }        
+      }
+    }      
+
+    footer{
+      display: none;
+    }
+  }
+  } 
+/*--------------------------------MOBILE-----------------------------*/
+@media only screen and (max-width: 767px){
+    header{
+      visibility: hidden;
+    }
+    .part1{
+      height: 90vh;
+  }
+  .left{
+    width: 100%;
+    background-size: 35vh;
+    background-position-y: 0px;
+
+}  
+.conteudo{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  br{
+    display: flex;
+  }
+   h1{
+    /* display: none; */
+    font-size: 35px;
+    width: -2%;
+      text-align: center;
+    }
+    span{
+      font-size: 2em;
+    }
+} 
+.conteudo2{
+  .botoes{
+    align-items: center;
+  }
+
+  .bt1{
+    height: 40px;
+    width: 273px;
+    .icone_botao{
+      width: 7vw;;
+  }
+  }
+  .bt2{
+    height: 40px;
+    width: 160px;
+    /* margin-bottom: 14vh; */
+  }
+}
+    .right{
+      visibility: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 320px;
+    }
+    .dogbored{
+      visibility: visible;
+      display: flex;
+      width: 0%;
+      justify-content: center;
+      img{
+        width: 100vw;
+        margin-right: 60vw;
+
+      } 
+    }
+
+    .part2{
+      height: 85vh;
+      .info{
+        width: 100%;
+      }
+      .textos{
+        p{
+          font-size: 1.8em;
+          width: 100%;
+          margin-top: revert;
+        }
+      }
+    }
+    .part3{
+      background-size: 100vw 22vh;
+      height: 22vh;
+      .banner{
+        .banner-texto{
+            h3{
+              font-size: 1.9em;
+            }
+            p{
+              font-size: 0.9em;
+            }        
+          }        
+      }
+    }      
+    .part4{
+      height: 100vh;
+  
+        .flip-card{
+          width: 70%;
+          height: 90vh;
+          
+        }
+        .flip-card-front{
+          border-radius:60px ;
+          flex-direction: column;
+  
+          h1{
+            font-size: 3.5em;
+            
+          }
+          
+          h2{
+            font-size: 1em;
+          }
+  
+          #flip-to-back{
+            width: 200px;
+            
+          }
+        }
+        .flip-card-back{
+          border-radius: 60px;
+          flex-direction: column;
+          .esquerda{
+            gap: 3vh;
+          }
+  
+          h1{
+            font-size: 2em;
+          }
+          h2{
+            font-size: 1.7em;
+          }
+          p{
+            font-size: 2em;
+          }
+          .qr_code{
+            align-items: center;
+            h2{
+              font-size: 1.5em;
+            }
+            img{
+              width: 150px;
+              height: 150px;
+            }
+          }
+  
+          .flip-button{
+            width: 40px;
+            height: 40px;
+          }
+  
+          
+        }
+    }
+    
+  .parte5{
+    height: 215vh;
+          
+    .Titulo{
+      margin-top:  12vh;
+      h1{
+        font-size: 1em;
+      }
+    }
+
+    #linha1 ,#linha2, #linha3 {
+      text-align: center  !important;
+    
+
+      p{
+        font-size: 1.3em;
+      }
+      img{
+        display: none;
+      }
+      
+      }
+
+      .zig-zag{
+        display: none;
+      }
+      
+      .zig-zag2{
+        display: flex;
+        width: 50px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+  } 
+}
+
+  footer{
+    display: none;
+  }
+@media screen and (max-width: 800px) {
+  .parte6 .parceiros {
+    display: block; /* Exibido apenas em dispositivos menores que 800px */
+    overflow: hidden;
+    white-space: nowrap;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    position: relative;
+    width: 100%;
+  }
+
+
+  .parte6 .ongs {
+    display: inline-block;
+    width: auto; /* Largura dos itens ajustada para se adaptar ao conteúdo */
+    margin-right: 10px; /* Espaçamento entre os itens reduzido */
+    text-align: center; /* Textos alinhados com as imagens */
+    vertical-align: top; /* Alinhamento vertical ao topo */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Inicia a partir do primeiro item */
+    }
+    100% {
+      transform: translateX(calc(-400% - 10px)); /* -10px para considerar o espaço entre os itens */
+    }
+  }
+
+  @keyframes smoothScroll {
+    0% {
+      transform: translateX(0); /* Inicia a partir do primeiro item */
+    }
+    50% {
+      transform: translateX(calc(-400% - 10px)); /* -10px para considerar o espaço entre os itens */
+    }
+    100% {
+      transform: translateX(0); /* Retorna ao primeiro item */
+    }
+  }
+
+  .parte6 .parceiros .ongs {
+    animation: scroll 10s linear infinite; /* Animação de rolagem */
+  }
+
+  .parte6 .parceiros:hover .ongs {
+    animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o carrossel */
+  }
+
+  .parte6 .parceiros .ongs:last-child {
+    margin-right: 0; /* Remover margem do último item */
+  }
+
+  .parte6 .parceiros .ongs:first-child {
+    margin-left: 0; /* Remover margem do primeiro item */
+  }
+}
+}
+
+  /* -------------------scroll da pag----------------------------------*/
+  body::-webkit-scrollbar {
+    width: 5px; /* largura dentro do scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--cor-background);/* cor da área de rastreamento*/
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 20px;/* arredondamento do scroll thumb */
+    border: 3px solid var(--cor-primaria-marrom);  /* cria preenchimento ao redor do scroll thumb */
+  }
