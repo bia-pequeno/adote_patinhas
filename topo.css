@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  cursor: url(imagens_head_foo/arrow-pointer-solid.svg), default;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(fontes/Montserrat/static/Montserrat-Regular.ttf);
+}
+.fonten {
+  font-family: montserrat;
+}
+
+@font-face {
+  font-family: montserratalt;
+  src: url(fontes/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+.fonteo {
+  font-family: montserratalt;
+}
+header {
+  width: 100%;
+  background-color: #efbf84;
+  height: 90px;
+  box-shadow: 0px 5px 8px #836745;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 0px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#seta_b {
+  margin-left: 5px;
+}
+#casa {
+  margin-right: 5px;
+}
+header a:hover {
+  cursor: url(imagens_head_foo/paw-solid.svg), default;
+  background-color: rgb(206, 155, 93);
+  transition: all 0.5s;
+}
+#barrad {
+  display: none;
+}
+#nav1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: larger;
+}
+#nav2 {
+  display: none;
+}
+#nav1 ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo {
+  width: 230px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+#menusus {
+  position: absolute;
+  width: 165px;
+  height: 163px;
+  background-color: #efbf84;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 0px 0px 10px 10px;
+  visibility: hidden;
+}
+#c1 {
+  margin-right: 5px;
+}
+#menusus a {
+  width: 100%;
+  height: 40%;
+  border-radius: 0px;
+  padding: 0px;
+  border-top: 1px solid #d4a872cc;
+  box-sizing: border-box;
+}
+#dog:hover {
+  border-radius: 0px 0px 10px 10px;
+}
+/*----*/
+#foo2 {
+  display: none;
+}
+#Copyright2 {
+  display: none;
+}
+footer {
+  background-color: #efd1ac;
+  border-radius: 125px 125px 0px 0px;
+}
+#foo {
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
+}
+#foo a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+}
+#foo a:hover {
+  text-decoration: underline;
+}
+#doguin {
+  width: 300px;
+}
+#redes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+#redes img {
+  width: 30px;
+}
+#logofooter {
+  width: 200px;
+}
+#sobre {
+  margin-top: 30px;
+  font-size: large;
+}
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#coluna1 {
+  align-items: center;
+  margin-top: 35px;
+}
+#coluna2 {
+  margin-top: 47px;
+  height: 115px;
+}
+#coluna3 {
+  margin-top: 47px;
+  height: 150px;
+}
+#coluna4 {
+  justify-content: space-between;
+  margin-top: 47px;
+}
+#coluna4 a {
+  margin-top: 8px;
+}
+#Copyright {
+  background-color: #e7b77c;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/*----------*/
+@media only screen and (max-width: 767px) {
+  header {
+    position: relative;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav1 {
+    display: none;
+  }
+  #logo {
+    width: 180px;
+  }
+  #barrad {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    margin-right: 15px;
+    color: #03997e;
+  }
+  #barrad:hover {
+    color: #f25c05b0;
+  }
+  #nav2 {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: right;
+    visibility: hidden;
+  }
+  #nav2 nav {
+    background-color: #e7b77c;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-radius: 0px 0px 0px 20px;
+  }
+  #nav2 a {
+    text-decoration: none;
+    color: black;
+  }
+  #nav2 ul {
+    height: 67%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  #nav2 a:hover {
+    text-decoration: underline #f25c056b;
+  }
+  #nav2 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #03997e;
+  }
+  #xis2 {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: xx-large;
+    color: #03997e;
+  }
+  #xxis2 {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  }
+  #xxis2:hover {
+    color: #f25c058f;
+  }
+  #log2 {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #log2 img {
+    width: 100%;
+  }
+
+  /*footer*/
+
+  #foo {
+    display: none;
+  }
+  #Copyright {
+    display: none;
+  }
+  #Copyright2 {
+    background-color: #e7b77c;
+    color: white;
+    height: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: larger;
+    word-spacing: 4px;
+  }
+  #foo2 {
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+  }
+  .quadros {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+  }
+  #foo2 h2 {
+    margin-bottom: 3px;
+  }
+  #foo2 a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+  }
+  #foo2 a:hover {
+    text-decoration: underline;
+  }
+  #logofooter2 {
+    width: 230px;
+  }
+  #resp1 {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+  }
+  #resp3 {
+    height: 150px;
+  }
+  #resp4 {
+    height: 90px;
+    border-bottom: none;
+    height: 120px;
+  }
+  #sobre2 {
+    width: 64%;
+    display: flex;
+    justify-content: center;
+  }
+  #redes2 {
+    width: 90%;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+  }
+}

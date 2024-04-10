@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cachorros</title>
+    <link rel="stylesheet" href="topo.css" type="text/css" />
+    <link rel="stylesheet" href="css/pets.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script src="topo.js" type="text/javascript"></script>
+    <script src="js/pets.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="fonteo" id="nav2">
+      <nav>
+        <div id="xis2">
+          <i id="xxis2" class="fa-solid fa-xmark" onclick="some_nav2()"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="#"> HOME</a>
+          </li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a id="quer" href="cachorro.html">Quero adotar</a>
+          </li>
+          <li><a href="#">Doe patinhas</a></li>
+        </ul>
+        <div id="log2">
+          <img src="imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
+        </div>
+      </nav>
+    </div>
+
+    <header class="fonten">
+      <div id="logdi">
+        <img
+          id="logo"
+          src="imagens_head_foo/LOGO_FINAL_SERIO2.png"
+          alt="logo" />
+      </div>
+      <div id="barrad" onclick="show_nav2()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav id="nav1">
+        <ul>
+          <li>
+            <a href="#"><i id="casa" class="fa-solid fa-house"></i> HOME</a>
+          </li>
+          <li><a href="#">Sobre</a></li>
+
+          <li>
+            <a id="quer" href="#" onmouseover="show_sus()" onmouseleave="some()"
+              >Quero adotar <i id="seta_b" class="fa-solid fa-caret-down"></i
+            ></a>
+            <div id="menusus" onmouseover="show_sus()" onmouseleave="some()">
+              <a href="gato.html"
+                ><i id="c1" class="fa-solid fa-cat"></i>Gatos</a
+              >
+              <a id="dog" href="cachorro.html"
+                ><i id="c1" class="fa-solid fa-dog"></i>Cachorros</a
+              >
+            </div>
+          </li>
+          <li><a href="#">Doe patinhas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- cards -->
+    <div class="fonteo" id="tudo">
+      <div id="pandora" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/pandora.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomel">PANDORA</span></h2>
+          <div id="info">
+            5 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Belo Horizonte-MG <br />
+            PORTE: &nbsp; <i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i> &nbsp;Grande
+          </div>
+          <p>
+            Pandora é uma fêmea cheia de energia e amor para dar. Ela adora brincar e está sempre pronta para fazer novos amigos. Pandora seria uma ótima companhia para qualquer família.
+          </p>
+          <button id="adote" class="lar">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_pan()"></i>
+      </div>
+
+      <div id="paçoca" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/paçoca.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomea">PAÇOCA</span></h2>
+          <div id="info">
+            3 ANOS &nbsp; &nbsp; &nbsp; &nbsp; São Paulo-SP <br />
+            PORTE: &nbsp; <i id="pazu" class="fa-solid fa-paw"></i
+            ><i id="pazu" class="fa-solid fa-paw"></i>&nbsp;Médio
+          </div>
+          <p>
+            Paçoca é uma fêmea doce e gentil, pronta para derreter corações com seu olhar amoroso. Ela adora receber carinho e está ansiosa para encontrar um lar.
+          </p>
+          <button id="adote" class="azu">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_paç()"></i>
+      </div>
+      
+      <div id="donatello" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/donatelo.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomel">DONATELLO</span></h2>
+          <div id="info">
+            5 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Rio de Janeiro-RJ <br />
+            PORTE: &nbsp; <i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i>&nbsp;Médio
+          </div>
+          <p>
+            Donatello é um macho corajoso e leal, pronto para proteger e amar sua nova família incondicionalmente. Ele adora brincar e está sempre pronto para uma aventura.
+          </p>
+          <button id="adote" class="lar">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_don()"></i>
+      </div>
+      <div id="dandara" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/dandara.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomea">DANDARA</span></h2>
+          <div id="info">
+            5 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Santos-SP <br />
+            PORTE: &nbsp; <i id="pazu" class="fa-solid fa-paw"></i>&nbsp;Pequeno
+          </div>
+          <p>
+            Dandara é uma fêmea inteligente e carinhosa, que adora estar perto de pessoas. Ela é brincalhona e sempre traz alegria para qualquer ambiente em que está.
+          </p>
+          <button id="adote" class="azu">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_dan()"></i>
+      </div>
+      <div id="apollo" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/appolo.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomel">APOLLO</span></h2>
+          <div id="info">
+            4 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Porto Alegre-RS <br />
+            PORTE: &nbsp; <i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i> &nbsp;Grande
+          </div>
+          <p>
+            Apolo é um macho energético e amigável, que adora correr e brincar ao ar livre. Ele é muito carinhoso e está sempre pronto para fazer novos amigos.
+          </p>
+          <button id="adote" class="lar">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_apo()"></i>
+      </div>
+      <div id="sirius" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/sirius.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomea">SIRIUS</span></h2>
+          <div id="info">
+            5 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Guarulhos-SP <br />
+            PORTE: &nbsp; <i id="pazu" class="fa-solid fa-paw"></i
+            ><i id="pazu" class="fa-solid fa-paw"></i
+            ><i id="pazu" class="fa-solid fa-paw"></i> &nbsp;Grande
+          </div>
+          <p>
+            Sirius é um macho inteligente e leal, que está sempre pronto para proteger e cuidar de sua família. Ele adora receber carinho e está ansioso para encontrar um lar.
+          </p>
+          <button id="adote" class="azu">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_sir()"></i>
+      </div>
+      <div id="luke" class="card">
+        <div id="cardft">
+          <img
+            class="canto"
+            src="imagens/pets/cachorros/luke.png"
+            alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomel">LUKE</span></h2>
+          <div id="info">
+            3 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Curitiba-PR <br />
+            PORTE: &nbsp; <i id="plar" class="fa-solid fa-paw"></i
+            ><i id="plar" class="fa-solid fa-paw"></i>&nbsp;Médio
+          </div>
+          <p>
+            Luke é um macho brincalhão e cheio de vida, que adora explorar o mundo ao seu redor. Ele é muito amigável e está sempre pronto para fazer novos amigos.
+          </p>
+          <button id="adote" class="lar">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_luk()"></i>
+      </div>
+      <div id="reginaldo" class="card">
+        <div id="cardft">
+          <img
+            class="canto"
+            src="imagens/pets/cachorros/regis.png"
+            alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomea">REGINALDO</span></h2>
+          <div id="info">
+            5 ANOS &nbsp; &nbsp; &nbsp; &nbsp; São Paulo-SP <br />
+            PORTE: &nbsp; <i id="pazu" class="fa-solid fa-paw"></i
+            ><i id="pazu" class="fa-solid fa-paw"></i
+            ><i id="pazu" class="fa-solid fa-paw"></i> &nbsp;Grande
+          </div>
+          <p>
+            Reginaldo é um macho doce e gentil, que adora passar o tempo ao lado de sua família. Ele é muito carinhoso e está sempre pronto para dar e receber amor.
+          </p>
+          <button id="adote" class="azu">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_reg()"></i>
+      </div>
+      <div id="toby" class="card">
+        <div id="cardft">
+          <img src="imagens/pets/cachorros/toby.png" alt="Cachorro" />
+        </div>
+        <div id="cardtex">
+          <h2>Meu nome é <br /><span id="nomel">TOBY</span></h2>
+          <div id="info">
+            2 ANOS &nbsp; &nbsp; &nbsp; &nbsp; Salvador-BA <br />
+            PORTE: &nbsp; <i id="plar" class="fa-solid fa-paw"></i>&nbsp;Pequeno
+          </div>
+          <p>
+            Toby é um macho amigável e brincalhão, que adora se divertir e fazer amigos. Ele é muito inteligente e está sempre pronto para aprender coisas novas.
+          </p>
+          <button id="adote" class="lar">Me Adote</button>
+        </div>
+        <i id="xis" class="fa-solid fa-xmark" onclick="some_tob()"></i>
+      </div>
+    </div>
+    <!-------->
+    <div id="nd"></div>
+    <section class="fonteo" id="topo">
+      <img id="dogu" src="imagens/pets/dog.png" alt="Cachorro" />
+      <h1 id="tex">
+        Olá <span id="hum">Humano!</span> <br />
+        precisa de um amigo?
+      </h1>
+      <img id="cat" src="imagens/pets/gato.png" alt="Gato" />
+      <img id="cats" src="imagens/pets/gatinhos.png" alt="Gatos" />
+    </section>
+    <!--------->
+    <section class="fonteo" id="topo2">
+      <img
+        id="dogo2"
+        src="imagens/pets/lacorgi-removebg-preview 1.png"
+        alt="gato" />
+      <h1 id="tex2">Olá <span id="hum">Humano!</span></h1>
+      <p id="pres">precisa de um amigo?</p>
+    </section>
+    <!------------->
+    <main class="fonteo">
+      <section id="topof">
+        <h1>Esperando a adoção</h1>
+        <div id="botoes">
+          <a href="gato.html"
+            ><button class="azu" type="button">Gatos</button></a
+          >
+          <a href="cachorro.html"
+            ><button class="lar" type="button">Cachorros</button></a
+          >
+        </div>
+      </section>
+      <!----------->
+      <section id="topof2">
+        <h1>Esperando a adoção</h1>
+        <div id="botoes2">
+          <a href="gato.html"
+            ><button class="azu" type="button">Gatos</button></a
+          >
+          <a href="cachorro.html"
+            ><button class="lar" type="button">Cachorros</button></a
+          >
+        </div>
+      </section>
+      <!-------->
+      <h1 id="titu">Cachorros</h1>
+      <section id="linha">
+        <div id="item">
+          <div id="itemft" onclick="show_pan()">
+            <img src="imagens/pets/cachorros/laranja.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">PANDORA</span><br />
+              <span id="lugar">Belo Horizonte - MG</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_paç()">
+            <img src="imagens/pets/cachorros/azul.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">PAÇOCA</span><br />
+              <span id="lugar">São Paulo - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_don()">
+            <img src="imagens/pets/cachorros/laranja2.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">DONATELLO</span><br />
+              <span id="lugar">Rio de Janeiro - RJ</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!----------->
+      <section id="linha">
+        <div id="item">
+          <div id="itemft" onclick="show_dan()">
+            <img src="imagens/pets/cachorros/azul2.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">DANDARA</span><br />
+              <span id="lugar">Santos - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_apo()">
+            <img src="imagens/pets/cachorros/laranja3.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">APOLLO</span><br />
+              <span id="lugar">Porto Alegre - RS</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_sir()">
+            <img src="imagens/pets/cachorros/azul3.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">SIRIUS</span><br />
+              <span id="lugar">Guarulhos - SP</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!----------->
+      <section id="linha">
+        <div id="item">
+          <div id="itemft" onclick="show_luk()">
+            <img src="imagens/pets/cachorros/laranja4.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">LUKE</span><br />
+              <span id="lugar">Curitiba - PR</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_reg()">
+            <img src="imagens/pets/cachorros/azul4.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">REGINALDO</span><br />
+              <span id="lugar">São paulo - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <div id="itemft" onclick="show_tob()">
+            <img src="imagens/pets/cachorros/laranja5.png" alt="Cachorro" />
+          </div>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">TOBY</span><br />
+              <span id="lugar">Salvador - BA</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!---------->
+      <section id="petsres">
+        <h1 id="titu2">Cachorros</h1>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/Pandora.html"
+            ><div id="itemft">
+              <img src="imagens/pets/cachorros/laranja.png" alt="Cachorro" />
+            </div>
+          </a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">PANDORA</span><br />
+              <span id="lugar">Belo Horizonte - MG</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/paçoca.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/azul.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">PAÇOCA</span><br />
+              <span id="lugar">São Paulo - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/donatello.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/laranja2.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">DONATELLO</span><br />
+              <span id="lugar">Rio de Janeiro - RJ</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/dandara.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/azul2.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">DANDARA</span><br />
+              <span id="lugar">Santos - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/apollo.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/laranja3.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">APOLLO</span><br />
+              <span id="lugar">Porto Alegre - RS</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/sirius.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/azul3.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">SIRIUS</span><br />
+              <span id="lugar">Guarulhos - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/luke.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/laranja4.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">LUKE</span><br />
+              <span id="lugar">Curitiba - PR</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/reginaldo.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/azul4.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomea">REGINALDO</span><br />
+              <span id="lugar">São paulo - SP</span>
+            </h2>
+          </div>
+        </div>
+        <div id="item">
+          <a href="pets_resp/dogs_resp/toby.html"><div id="itemft">
+            <img src="imagens/pets/cachorros/laranja5.png" alt="Cachorro" />
+          </div></a>
+          <div id="itemtex">
+            <h2>
+              Meu nome é <br /><span id="nomel">TOBY</span><br />
+              <span id="lugar">Salvador - BA</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="foo" class="fonteo">
+        <div class="footerdiv" id="coluna1">
+          <a href="#"
+            ><img
+              id="logofooter"
+              src="imagens_head_foo/LOGO_FINAL_SERIO2.png"
+              alt="logo"
+          /></a>
+          <h2 id="sobre">Redes Sociais</h2>
+          <div id="redes">
+            <a href="#"
+              ><img src="imagens_head_foo/facebook 1.png" alt="facebook logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="imagens_head_foo/instagram (1) 1.png"
+                alt="instagram logo"
+            /></a>
+            <a href="#"
+              ><img src="imagens_head_foo/whatsapp 1.png" alt="whatsapp logo"
+            /></a>
+            <a href="#"
+              ><img src="imagens_head_foo/twitter (1) 1.png" alt="twitter logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footerdiv" id="coluna2">
+          <h2>Como Ajudar?</h2>
+          <a href="cachorro.html">Quero adotar</a>
+          <a href="#">Quero doar</a>
+        </div>
+
+        <div class="footerdiv" id="coluna3">
+          <h2>Institucional</h2>
+          <a href="#">Sobre a adote patinhas</a>
+          <a href="#">Canal de denuncias</a>
+          <a href="#">Trabalhe conosco</a>
+        </div>
+
+        <div class="footerdiv" id="coluna4">
+          <h2>Quem Nós Somos?</h2>
+          <a href="#">Como nos encontrar</a>
+          <a href="#">Sobre nós</a>
+          <img
+            id="doguin"
+            src="imagens_head_foo/lacorgi-removebg-preview 1.png"
+            alt="cachorro" />
+        </div>
+      </section>
+
+      <div id="Copyright" class="fonten">
+        Copyright © 2024, Adote Patinhas - Todos os Direitos Reservados
+      </div>
+
+      <!------------->
+      <section id="foo2" class="fonteo">
+        <div id="resp1">
+          <a href="#"
+            ><img
+              id="logofooter2"
+              src="imagens_head_foo/LOGO_FINAL_SERIO2.png"
+              alt="logo"
+          /></a>
+        </div>
+
+        <div class="quadros" id="resp2">
+          <h2>Como Ajudar?</h2>
+          <a href="cachorro.html">Quero adotar</a>
+          <a href="#">Quero doar</a>
+        </div>
+
+        <div class="quadros" id="resp3">
+          <h2>Institucional</h2>
+          <a href="#">Sobre a adote patinhas</a>
+          <a href="#">Canal de denuncias</a>
+          <a href="#">Trabalhe conosco</a>
+        </div>
+
+        <div class="quadros" id="resp4">
+          <h2>Quem Nós Somos?</h2>
+          <a href="#">Como nos encontrar</a>
+          <a href="#">Sobre nós</a>
+        </div>
+        <h2 id="sobre2">Redes Sociais</h2>
+        <div id="redes2">
+          <a href="#"
+            ><img src="imagens_head_foo/facebook 1.png" alt="facebook logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="imagens_head_foo/instagram (1) 1.png"
+              alt="instagram logo"
+          /></a>
+          <a href="#"
+            ><img src="imagens_head_foo/whatsapp 1.png" alt="whatsapp logo"
+          /></a>
+          <a href="#"
+            ><img src="imagens_head_foo/twitter (1) 1.png" alt="twitter logo"
+          /></a>
+        </div>
+      </section>
+
+      <div id="Copyright2" class="fonten">
+        Copyright © 2024, Adote Patinhas - Todos os Direitos Reservados
+      </div>
+    </footer>
+  </body>
+</html>
