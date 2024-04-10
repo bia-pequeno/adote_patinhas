@@ -1,0 +1,758 @@
+/* Reset de estilos e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(./assets/arrow-pointer-solid.svg), default;
+}
+
+/* Fontes personalizadas */
+@font-face {
+  font-family: montserrat;
+  src: url(../fontes/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: montserratalt;
+  src: url(../fontes/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+/* Estilos do cabeçalho */
+header {
+  width: 100%;
+  background-color: #efbf84;
+  height: 90px;
+  box-shadow: 0px 5px 8px #836745;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 0px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#seta_b {
+  margin-left: 5px;
+}
+#casa {
+  margin-right: 5px;
+}
+header a:hover {
+  cursor: url(assets/paw-solid.svg), default;
+  background-color: rgb(206, 155, 93);
+  transition: all 0.5s;
+}
+#barrad {
+  display: none;
+}
+#nav1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: larger;
+}
+#nav2 {
+  display: none;
+}
+#nav1 ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo {
+  width: 200px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+#menusus {
+  position: absolute;
+  width: 165px;
+  height: 163px;
+  background-color: #efbf84;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 0px 0px 10px 10px;
+  visibility: hidden;
+}
+#c1 {
+  margin-right: 5px;
+}
+#menusus a {
+  width: 100%;
+  height: 40%;
+  border-radius: 0px;
+  padding: 0px;
+  border-top: 1px solid #d4a872cc;
+  box-sizing: border-box;
+}
+#dog:hover {
+  border-radius: 0px 0px 10px 10px;
+}
+/*----*/
+#foo2 {
+  display: none;
+}
+#Copyright2 {
+  display: none;
+}
+footer {
+  background-color: #efd1ac;
+  border-radius: 125px 125px 0px 0px;
+}
+#foo {
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
+}
+#foo a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+}
+#foo a:hover {
+  text-decoration: underline;
+}
+#doguin {
+  width: 300px;
+}
+#redes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+#redes img {
+  width: 30px;
+}
+#logofooter {
+  width: 200px;
+}
+#sobre {
+  margin-top: 30px;
+  font-size: large;
+}
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#coluna1 {
+  align-items: center;
+  margin-top: 35px;
+}
+#coluna2 {
+  margin-top: 47px;
+  height: 115px;
+}
+#coluna3 {
+  margin-top: 47px;
+  height: 150px;
+}
+#coluna4 {
+  justify-content: space-between;
+  margin-top: 47px;
+}
+#coluna4 a {
+  margin-top: 8px;
+}
+#Copyright {
+  background-color: #e7b77c;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+/* Estilos do conteúdo principal */
+.topo {
+  background-color: #f28d52;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div1 {
+  margin-left: 10%;
+  margin-top: auto;
+  background-image: url("./assets/patinha-gato.png");
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: 32% 100%;
+}
+
+.div1 h2,
+.div1 p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.div1 h2 {
+  font-size: 40px;
+  color: #d9d9d9;
+}
+
+.div1 p {
+  font-size: 48px;
+  color: #d9d9d9;
+}
+
+.div1 img {
+  margin-bottom: -5px;
+  width: 40%;
+  height: 355px;
+}
+
+.div2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 500px;
+  height: 300px;
+  margin-right: 15vh;
+  margin-top: auto;
+  background-image: url("./assets/patinha-cao.png");
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: -4vw 100%;
+}
+
+.div2 img {
+  margin-bottom: -18px;
+  height: 55vh;
+}
+
+/* Estilos da equipe */
+.titulo-equipe {
+  color: #f25c05; 
+  white-space: pre-line;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 60px;
+  /*background-image: url("./assets/equipe.pata.png"); */
+  background-repeat: no-repeat;
+  background-size: 450px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.titulo-equipe span {
+  color: #04BF9D;
+}
+
+.equipe {
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 9%;
+}
+
+.equipe div {
+  width: 300px;
+  height: 330px;
+  border-radius: 100%;
+  margin: auto;
+  margin-bottom: 300px;
+}
+
+.equipe div:nth-child(odd) {
+  border: 5px solid #F25C05 !important; /* Laranja */
+}
+
+.equipe div:nth-child(even) {
+  border: 5px solid #04BF9D !important; /* Azul */
+}
+
+
+
+.equipe img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+
+.fotos img {
+  margin-top: -95px;
+}
+
+.fotos h3 {
+  text-align: center;
+}
+
+
+.equipe h2 {
+  white-space: pre-line;
+  text-align: center;
+  font-size: 50px;
+  color: #f25c05;
+}
+
+.equipe h3 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.equipe .fotos:nth-child(odd) h3 {
+  color: #F25C05; /* Laranja */
+}
+
+.equipe .fotos:nth-child(even) h3 {
+  color: #04BF9D; /* Azul */
+}
+
+
+
+.equipe p {
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.equipe span {
+  color: #04BF9D;
+}
+
+/* Estilos dos pets */
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal {
+  position: relative;
+  background-color: #d9d9d9a4;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal h1 {
+  color: #f25c05;
+  font-size: 5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+ /* background-image: url("./assets/pets-pata.png"); */
+  background-repeat: no-repeat;
+  background-size: 450px;
+  margin-top: 100px;
+}
+
+.circle,
+.circle1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin-bottom: 100px;
+}
+
+.circle{
+  margin-left: 300px;
+}
+
+.circle, 
+.circle1 {
+  white-space: pre-line;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.circle1 h2,
+.circle h2 {
+  position: absolute;
+}
+
+.circle h2.dadinho {
+  position: absolute;
+  margin-right: 25%;
+  margin-top: -100px;
+}
+
+.circle1 h2.calo {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.circle h2.aninha {
+  position: absolute;
+  margin-right: 30%;
+  margin-top: -100px;
+}
+
+.circle1 h2.billy {
+  position: absolute;
+  margin-right: 25%;
+}
+
+
+
+/* Estilos das informações dos animais */
+.dadinho-info {
+  margin-top: 10%;
+}
+
+.calo-info {
+  margin-top: 50%;
+ 
+}
+
+.aninha-info {
+  margin-top: 50%;
+}
+
+.billy-info {
+  margin-top: 70%;
+  white-space: pre-line;
+}
+
+
+/* Media queries */ 
+@media only screen and (max-width: 767px) {
+ 
+  header {
+    position: relative;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav1 {
+    display: none;
+  }
+  #logo {
+    width: 130px;
+  }
+  #barrad {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    margin-right: 15px;
+    color: #03997e;
+  }
+  #barrad:hover {
+    color: #f25c05b0;
+  }
+  #nav2 {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: right;
+    visibility: hidden;
+  }
+  #nav2 nav {
+    background-color: #e7b77c;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    border-radius: 0px 0px 0px 20px;
+  }
+  #nav2 a {
+    text-decoration: none;
+    color: black;
+  }
+  #nav2 ul {
+    height: 67%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  #nav2 a:hover {
+    text-decoration: underline #f25c056b;
+  }
+  #nav2 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86%;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #03997e;
+  }
+  #xis2 {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: xx-large;
+    color: #03997e;
+  }
+  #xxis2 {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  }
+  #xxis2:hover {
+    color: #f25c058f;
+  }
+  #log2 {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #log2 img {
+    width: 100%;
+  }
+
+  .div1 img {
+    display: none;
+  }
+  .div1 p{
+    font-size: 20px;
+  }
+  
+  .div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .topo {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div1,
+  .div2 {
+    background-image: none;
+  }
+
+  .circle, .circle1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .div1 img {
+    display: none;
+  }
+  .div1 p{
+    font-size: 20px;
+  }
+  
+  .div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div2 img {
+    height: 69%;
+  }
+
+  .topo {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div1,
+  .div2 {
+    background-image: none;
+  }
+
+  .dadinho-info,
+  .calo-info,
+  .aninha-info,
+  .billy-info {
+    margin-top: unset;
+  }
+
+  .pet-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle, .circle1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle h2.dadinho {
+    position: absolute;
+    margin-top: -70%;
+    margin-right: 50%;
+  }
+  
+  .circle1 h2.calo {
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 1%;
+  }
+  
+  .circle h2.aninha {
+    position: absolute;
+    margin-top: -70%;
+    margin-left: -5%;
+  }
+  
+  .circle1 h2.billy {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: -5%;
+  }
+
+  .principal img {
+    width: 300px;
+  }
+
+  .principal h2 {
+    font-size: 10px;
+  }
+
+  .equipe {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .circle, .circle1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle, .circle1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .div1 p{
+    font-size: 20px;
+  }
+
+  .circle{
+    margin: auto;
+  }
+
+  
+
+  /*footer*/
+
+  #foo {
+    display: none;
+  }
+  #Copyright {
+    display: none;
+  }
+  #Copyright2 {
+    background-color: #e7b77c;
+    color: white;
+    height: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: larger;
+    word-spacing: 4px;
+  }
+  #foo2 {
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+  }
+  .quadros {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+  }
+  #foo2 h2 {
+    margin-bottom: 3px;
+  }
+  #foo2 a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+  }
+  #foo2 a:hover {
+    text-decoration: underline;
+  }
+  #logofooter2 {
+    width: 230px;
+  }
+  #resp1 {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+  }
+  #resp3 {
+    height: 150px;
+  }
+  #resp4 {
+    height: 90px;
+    border-bottom: none;
+    height: 120px;
+  }
+  #sobre2 {
+    width: 64%;
+    display: flex;
+    justify-content: center;
+  }
+  #redes2 {
+    width: 90%;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+  }
+}
+
+
+
+
