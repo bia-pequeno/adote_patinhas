@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário para adoção</title>
+    <link rel="stylesheet" href="css/form.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script src="js/topo.js" type="text/javascript"></script>
+  </head>
+    <div class="fonteo" id="nav2">
+      <nav>
+        <div id="xis2">
+          <i id="xxis2" class="fa-solid fa-xmark" onclick="some_nav2()"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="home.html"> HOME</a>
+          </li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a id="quer" href="cachorro.html">Quero adotar</a>
+          </li>
+          <li><a href="#">Doe patinhas</a></li>
+        </ul>
+        <div id="log2">
+          <img src="imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
+        </div>
+      </nav>
+    </div>
+
+    <header class="fonten">
+      <div id="logdi">
+        <img id="logo" src="imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
+      </div>
+      <div id="barrad" onclick="show_nav2()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav id="nav1">
+        <ul>
+          <li>
+            <a href="/home.html"><i id="casa" class="fa-solid fa-house"></i> HOME</a>
+          </li>
+          <li><a href="/sobre-nos.html">Sobre</a></li>
+
+          <li>
+            <a id="quer" href="#" onmouseover="show_sus()" onmouseleave="some()"
+              >Quero adotar <i id="seta_b" class="fa-solid fa-caret-down"></i
+            ></a>
+            <div id="menusus" onmouseover="show_sus()" onmouseleave="some()">
+              <a href="/gato.html"
+                ><i id="c1" class="fa-solid fa-cat"></i>Gatos</a
+              >
+              <a id="dog" href="/cachorro.html"
+                ><i id="c1" class="fa-solid fa-dog"></i>Cachorros</a
+              >
+            </div>
+          </li>
+          <li><a href="#">Doe patinhas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <main>
+          <section class="formulario">
+            <h1 class="titleform">Formulário para <br/> Adoção</h1>
+            <form action="#" method="post">
+
+              <div id="dadospessoais">
+                  <img class="patinhalaranja" src="imagens/patinhalaranja.png"/>
+                  <h2>Dados Pessoais</h2>
+              </div>
+
+                  <div class="inputbox">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel" for="name">Nome Completo</label><br/>
+                      <input id="name" type="text" name="name" placeholder="Digite aqui" required/>
+                  </div>
+                  <div class="inputbox">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel" for="email">Email</label><br/>
+                      <input id="email" type="email" name="email" placeholder="Digite aqui" required/>
+                  </div>
+                  <div class="tospacebetween">
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">CPF</label><br/>
+                          <input type="text" placeholder="Digite aqui" maxlength="11" required/>
+                      </div>
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">Telefone</label><br/>
+                          <input type="text" placeholder="Digite aqui" maxlength="11" required/>
+                      </div>
+                  </div>    
+                  <div class="inputbox">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel" for="name">Endereço</label><br/>
+                      <input id="name" type="text" name="name" placeholder="Digite aqui" required/>
+                  </div>
+                  <div class="tospacebetween">
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">Número</label><br/>
+                          <input type="text" placeholder="Digite aqui" maxlength="10" required/>
+                      </div>
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">Bairro</label><br/>
+                          <input type="text" placeholder="Digite aqui" required/>
+                      </div>
+                  </div>
+                  <div class="tospacebetween">
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">Cidade</label><br/>
+                          <input type="text" placeholder="Digite aqui" required/>
+                      </div>
+                      <div class="inputbox2">
+                          <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                          <label class="titlelabel">Estado</label><br/>
+                          <input type="text" placeholder="Digite aqui" required/>
+                      </div>
+                  </div>    
+
+
+              <div id="responsa">
+                  <img class="patinhalaranja" src="imagens/patinhalaranja.png"/>
+                  <h2>Responsabilidades</h2>
+              </div>
+
+              
+                  <div id="radio1">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel">Quantas pessoas moram com você?</label><br/>
+                      
+                      <div class="inputradio">
+                          <input type="radio" name="resp1" id="1" value="0">
+                          <label for="1">0</label>
+                          <input type="radio" name="resp1" id="2" value="1">
+                          <label for="2">1</label>
+                          <input type="radio" name="resp1" id="3" value="2">
+                          <label for="3">2</label>
+                          <input type="radio" name="resp1" id="4" value="3">
+                          <label for="4">3</label>
+                          <input type="radio" name="resp1" id="5" value="4 ou +">
+                          <label for="5">4 ou +</label>
+                      </div>
+                  </div>
+
+                  <div id="radio2">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel">As que pessoas moram com você concordam com a adoção?</label>
+                      <div class="inputradio">
+                          <input type="radio" name="resp2" id="sim1" value="Sim">
+                          <label for="sim1">Sim</label>
+                          <input type="radio" name="resp2" id="nao1" value="Não">
+                          <label for="nao1">Não</label>
+                      </div>
+                  </div>
+
+                  <div id="radio3">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label class="titlelabel">Já tem ou teve outros pets?</label>
+                      <div class="inputradio">
+                          <input type="radio" name="resp3" id="sim2" value="Sim">
+                          <label for="sim2">Sim</label>
+                          <input type="radio" name="resp3" id="nao2" value="Não">
+                          <label for="nao2">Não</label>
+                      </div>
+                  </div>   
+
+                  <div class="textarea">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label for="message" class="titlelabel">Caso afirmativo, conte um pouco sobre eles:</label><br>
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Digite aqui"></textarea><br><br>
+                  </div>
+
+                  <div class="textarea">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label for="message" class="titlelabel">Conte um pouco sobre você e sua rotina:</label><br>
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Digite aqui"></textarea><br><br>
+                  </div>
+
+                  <div class="textarea">
+                      <img class="patinhaaqua" src="imagens/patinhaaqua.png"/>
+                      <label for="message" class="titlelabel">Por que você quer adotar um pet?</label><br>
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Digite aqui"></textarea><br><br>
+                  </div>
+
+                  <div id="botoes">
+                      <input id="voltar" type="submit" value="Voltar" onclick="history.back()">
+                      <input id="enviar" type="submit" value="Enviar" src="#">
+                  </div>
+
+          </form>
+          </section>
+      </main>
+    </body>
+    
+    <footer>
+      <section id="foo" class="fonteo">
+        <div class="footerdiv" id="coluna1">
+          <a href="#"
+            ><img
+              id="logofooter"
+              src="imagens_head_foo/LOGO_FINAL_SERIO2.png"
+              alt="logo"
+          /></a>
+          <h2 id="sobre">Redes Sociais</h2>
+          <div id="redes">
+            <a href="#"
+              ><img src="imagens_head_foo/facebook 1.png" alt="facebook logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="imagens_head_foo/instagram (1) 1.png"
+                alt="instagram logo"
+            /></a>
+            <a href="#"
+              ><img src="imagens_head_foo/whatsapp 1.png" alt="whatsapp logo"
+            /></a>
+            <a href="#"
+              ><img src="imagens_head_foo/twitter (1) 1.png" alt="twitter logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footerdiv" id="coluna2">
+          <h2>Como Ajudar?</h2>
+          <a href="cachorro.html">Quero adotar</a>
+          <a href="#">Quero doar</a>
+        </div>
+
+        <div class="footerdiv" id="coluna3">
+          <h2>Institucional</h2>
+          <a href="#">Sobre a adote patinhas</a>
+          <a href="#">Canal de denuncias</a>
+          <a href="#">Trabalhe conosco</a>
+        </div>
+
+        <div class="footerdiv" id="coluna4">
+          <h2>Quem Nós Somos?</h2>
+          <a href="#">Como nos encontrar</a>
+          <a href="#">Sobre nós</a>
+          <img
+            id="doguin"
+            src="imagens_head_foo/lacorgi-removebg-preview 1.png"
+            alt="cachorro" />
+        </div>
+      </section>
+
+      <div id="Copyright" class="fonten">
+        Copyright © 2024, Adote Patinhas - Todos os Direitos Reservados
+      </div>
+
+      <!------------->
+      <section id="foo2" class="fonteo">
+        <div id="resp1">
+          <a href="#"
+            ><img
+              id="logofooter2"
+              src="imagens_head_foo/LOGO_FINAL_SERIO2.png"
+              alt="logo"
+          /></a>
+        </div>
+
+        <div class="quadros" id="resp2">
+          <h2>Como Ajudar?</h2>
+          <a href="cachorro.html">Quero adotar</a>
+          <a href="#">Quero doar</a>
+        </div>
+
+        <div class="quadros" id="resp3">
+          <h2>Institucional</h2>
+          <a href="#">Sobre a adote patinhas</a>
+          <a href="#">Canal de denuncias</a>
+          <a href="#">Trabalhe conosco</a>
+        </div>
+
+        <div class="quadros" id="resp4">
+          <h2>Quem Nós Somos?</h2>
+          <a href="#">Como nos encontrar</a>
+          <a href="#">Sobre nós</a>
+        </div>
+        <h2 id="sobre2">Redes Sociais</h2>
+        <div id="redes2">
+          <a href="#"
+            ><img src="imagens_head_foo/facebook 1.png" alt="facebook logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="imagens_head_foo/instagram (1) 1.png"
+              alt="instagram logo"
+          /></a>
+          <a href="#"
+            ><img src="imagens_head_foo/whatsapp 1.png" alt="whatsapp logo"
+          /></a>
+          <a href="#"
+            ><img src="imagens_head_foo/twitter (1) 1.png" alt="twitter logo"
+          /></a>
+        </div>
+      </section>
+
+      <div id="Copyright2" class="fonten">
+        Copyright © 2024, Adote Patinhas - Todos os Direitos Reservados
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+  </body>
+</html>
