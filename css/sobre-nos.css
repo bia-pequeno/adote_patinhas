@@ -1,3 +1,14 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  .fonten {
+    font-family: var(--Montserrat-Alternates-font);
+  }
+  
+  .fonteo {
+    font-family: var(--Montserrat-Alternates-font);
+  }
 /* Variáveis */
 :root {
     --cor-primaria-marrom: #EBBA7E;
@@ -18,12 +29,17 @@
     --poppins-font: "Poppins", sans-serif;
     --Montserrat-Alternates-font:"Montserrat Alternates", sans-serif;
 }
-/* Reset de estilos e configurações globais */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url(./assets/arrow-pointer-solid.svg), default;
+    cursor: url(../img/arrow-pointer-solid.svg), default;
+    text-decoration: none;
+    /* background-color: var(--cor-background); */
+
+}
+  body{
+    background-color: var(--cor-background);
   }
   
   /* Estilos do cabeçalho */
@@ -38,6 +54,7 @@
     flex-direction: row;
     padding: 10px 0px 10px 0px;
   }
+
   header a {
     text-decoration: none;
     color: black;
@@ -113,102 +130,21 @@
   #dog:hover {
     border-radius: 0px 0px 10px 10px;
   }
-  /*----*/
-  #foo2 {
-    display: none;
-  }
-  #Copyright2 {
-    display: none;
-  }
-  footer {
-    background-color: #efd1ac;
-    border-radius: 125px 125px 0px 0px;
-  }
-  #foo {
-    height: 280px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: larger;
-  }
-  #foo a {
-    text-decoration: none;
-    color: black;
-    width: fit-content;
-  }
-  #foo a:hover {
-    text-decoration: underline;
-  }
-  #doguin {
-    width: 300px;
-  }
-  #redes {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 25px;
-  }
-  #redes img {
-    width: 30px;
-  }
-  #logofooter {
-    width: 200px;
-  }
-  #sobre {
-    margin-top: 30px;
-    font-size: large;
-  }
-  .footerdiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  #coluna1 {
-    align-items: center;
-    margin-top: 35px;
-  }
-  #coluna2 {
-    margin-top: 47px;
-    height: 115px;
-  }
-  #coluna3 {
-    margin-top: 47px;
-    height: 150px;
-  }
-  #coluna4 {
-    justify-content: space-between;
-    margin-top: 47px;
-  }
-  #coluna4 a {
-    margin-top: 8px;
-  }
-  #Copyright {
-    background-color: #e7b77c;
-    color: white;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
   
   
   /* Estilos do conteúdo principal */
   .topo {
     background-color: #f28d52;
     width: 100%;
-    height: 650px;
+    height: 99.9vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
   }
   
   .div1 {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: auto;
-    background-image: url("./assets/patinha-gato.png");
-    background-repeat: no-repeat;
-    background-size: 450px;
-    background-position: 32% 100%;
   }
   
   .div1 h2,
@@ -227,9 +163,9 @@
   }
   
   .div1 img {
-    margin-bottom: -5px;
-    width: 40%;
-    height: 355px;
+    width: 50vw;
+    height: 50vh;
+    margin-bottom: -10px;
   }
   
   .div2 {
@@ -238,17 +174,14 @@
     align-items: flex-end;
     width: 500px;
     height: 300px;
-    margin-right: 15vh;
     margin-top: auto;
-    background-image: url("./assets/patinha-cao.png");
-    background-repeat: no-repeat;
-    background-size: 450px;
-    background-position: -4vw 100%;
+
   }
   
   .div2 img {
-    margin-bottom: -18px;
-    height: 55vh;
+  
+    height: 70vh;
+    width: 50vw;
   }
   
   /* Estilos da equipe */
@@ -258,7 +191,7 @@
     text-align: center;
     margin-top: 5%;
     font-size: 60px;
-    /*background-image: url("./assets/equipe.pata.png"); */
+    background-color: var(--cor-background);
     background-repeat: no-repeat;
     background-size: 450px;
     font-family: var(--Montserrat-Alternates-font);
@@ -269,6 +202,7 @@
   }
   
   .equipe {
+    background-color: var(--cor-background);
     font-family: var(--Montserrat-Alternates-font);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -350,14 +284,26 @@
   
   .principal {
     position: relative;
-    background-color: #d9d9d9a4;
+    background-color: var(--cor-background);
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+  }
+  .dadinho{
+    display: flex;
+    margin-left: -20vw;
+  }
+
+  .nigel{
+    display: flex;
+    margin-right: -15vw;
   }
   
   .principal h1 {
+    display: flex;
+    align-items: center;
     color: #f25c05;
     font-size: 5rem;
     font-family: var(--Montserrat-Alternates-font);
@@ -367,23 +313,31 @@
     background-size: 450px;
     margin-top: 100px;
   }
-  
+  #e1{
+   display: flex;
+   margin-left: 20%;
+  }
+
+  #d1{
+    display: flex;
+    margin-right: 20%;
+  }
   .circle,
   .circle1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    
     width: 20%;
-    margin-bottom: 100px;
   }
   
   .circle{
-    margin-left: 300px;
+    margin-left: 0px;
   }
   
   .circle, 
   .circle1 {
+    width: 850px;
     white-space: pre-line;
     font-family: var(--Montserrat-Alternates-font);
   }
@@ -435,6 +389,85 @@
   .billy-info {
     margin-top: 70%;
     white-space: pre-line;
+  }
+  
+  /*----*/
+  #foo2 {
+    display: none;
+  }
+  #Copyright2 {
+    display: none;
+  }
+  footer {
+    background-color: #efd1ac;
+    border-radius: 125px 125px 0px 0px;
+  }
+  #foo {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger;
+  }
+  #foo a {
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+  }
+  #foo a:hover {
+    text-decoration: underline;
+  }
+  #doguin {
+    width: 300px;
+  }
+  #redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  #redes img {
+    width: 30px;
+  }
+  #logofooter {
+    width: 200px;
+  }
+  #sobre {
+    margin-top: 30px;
+    font-size: large;
+  }
+  .footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #coluna1 {
+    align-items: center;
+    margin-top: 35px;
+  }
+  #coluna2 {
+    margin-top: 47px;
+    height: 115px;
+  }
+  #coluna3 {
+    margin-top: 47px;
+    height: 150px;
+  }
+  #coluna4 {
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+  #coluna4 a {
+    margin-top: 8px;
+  }
+  #Copyright {
+    background-color: #e7b77c;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
   }
   
   
@@ -592,7 +625,7 @@
       align-items: center;
     }
     .div2 img {
-      height: 69%;
+      height: 100%;
     }
   
     .topo {
@@ -602,8 +635,7 @@
       flex-direction: column;
     }
   
-    .div1,
-    .div2 {
+    .div1 ,.div2 {
       background-image: none;
     }
   
@@ -611,12 +643,14 @@
     .calo-info,
     .aninha-info,
     .billy-info {
-      margin-top: unset;
+      margin-top: 0;
     }
   
     .pet-container{
       display: flex;
       justify-content: center;
+      height: 80vh;
+      align-items: center;
     }
   
     .circle, .circle1{
@@ -662,28 +696,18 @@
     }
     
   
-    .circle, .circle1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
   
     .circle, .circle1 {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 0;
+      
+     
     }
   
     .div1 p{
       font-size: 20px;
     }
   
-    .circle{
-      margin: auto;
-    }
   
     
   

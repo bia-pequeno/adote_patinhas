@@ -13,59 +13,63 @@
       referrerpolicy="no-referrer" />
     <script src="js/topo.js" type="text/javascript"></script>
   </head>
-    <div class="fonteo" id="nav2">
-      <nav>
-        <div id="xis2">
-          <i id="xxis2" class="fa-solid fa-xmark" onclick="some_nav2()"></i>
-        </div>
-        <ul>
-          <li>
-            <a href="home.html"> HOME</a>
-          </li>
-          <li><a href="#">Sobre</a></li>
-          <li>
-            <a id="quer" href="cachorro.html">Quero adotar</a>
-          </li>
-          <li><a href="#">Doe patinhas</a></li>
-        </ul>
-        <div id="log2">
-          <img src="imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
-        </div>
-      </nav>
+  <div class="fonteo" id="nav2">
+    <nav>
+      <div id="xis2">
+        <i id="xxis2" class="fa-solid fa-xmark" onclick="some_nav2()"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="/home.html"> HOME</a>
+        </li>
+        <li><a href="/sobre-nos.html">Sobre</a></li>
+        <li>
+          <a id="quer" href="/form.html">Quero adotar</a>
+        </li>
+        <li><a href="/doacao.html">Doe patinhas</a></li>
+      </ul>
+      <div id="log2">
+        <img src="img/imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
+      </div>
+    </nav>
+  </div>
+
+  <header class="fonten">
+    <div id="logdi">
+      <img
+        id="logo"
+        src="img/imagens_head_foo/LOGO_FINAL_SERIO2.png"
+        alt="logo" />
+    </div>
+    <div id="barrad" onclick="show_nav2()">
+      <i class="fa-solid fa-bars"></i>
     </div>
 
-    <header class="fonten">
-      <div id="logdi">
-        <img id="logo" src="imagens_head_foo/LOGO_FINAL_SERIO2.png" alt="logo" />
-      </div>
-      <div id="barrad" onclick="show_nav2()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+    <nav id="nav1">
+      <ul>
+        <li>
+          <a href="/home.html"><i id="casa" class="fa-solid fa-house"></i> HOME</a>
+        </li>
+        <li><a href="/sobre-nos.html">Sobre</a></li>
 
-      <nav id="nav1">
-        <ul>
-          <li>
-            <a href="/home.html"><i id="casa" class="fa-solid fa-house"></i> HOME</a>
-          </li>
-          <li><a href="/sobre-nos.html">Sobre</a></li>
+        <li>
+          <a id="quer" href="/form.html" onmouseover="show_sus()" onmouseleave="some()"
+            >Quero adotar <i id="seta_b" class="fa-solid fa-caret-down"></i
+          ></a>
+          <div id="menusus" onmouseover="show_sus()" onmouseleave="some()">
+            <a href="/gato.html"
+              ><i id="c1" class="fa-solid fa-cat"></i>Gatos</a
+            >
+            <a id="dog" href="/cachorro.html"
+              ><i id="c1" class="fa-solid fa-dog"></i>Cachorros</a
+            >
+          </div>
+        </li>
+        <li><a href="/doacao.html">Doe patinhas</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <li>
-            <a id="quer" href="#" onmouseover="show_sus()" onmouseleave="some()"
-              >Quero adotar <i id="seta_b" class="fa-solid fa-caret-down"></i
-            ></a>
-            <div id="menusus" onmouseover="show_sus()" onmouseleave="some()">
-              <a href="/gato.html"
-                ><i id="c1" class="fa-solid fa-cat"></i>Gatos</a
-              >
-              <a id="dog" href="/cachorro.html"
-                ><i id="c1" class="fa-solid fa-dog"></i>Cachorros</a
-              >
-            </div>
-          </li>
-          <li><a href="#">Doe patinhas</a></li>
-        </ul>
-      </nav>
-    </header>
     <body>
       <main>
           <section class="formulario">
