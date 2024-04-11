@@ -1,22 +1,38 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   cursor: url(../imagens/pets/arrow-pointer-solid.svg), default;
 }
 
-@font-face {
-  font-family: montserrat;
-  src: url(../fontes/Montserrat/static/Montserrat-Regular.ttf);
-}
 .fonten {
-  font-family: montserrat;
-}
-
-@font-face {
-  font-family: montserratalt;
-  src: url(../fontes/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+  font-family: var(--Montserrat-Alternates-font);
 }
 .fonteo {
-  font-family: montserratalt;
+  font-family: var(--Montserrat-Alternates-font);
+}
+
+/* Variáveis */
+:root {
+  --cor-primaria-marrom: #EBBA7E;
+  --cor-secundaria-branca: #FFFFFF; 
+  --cor-terciaria-azul: #9AE1D4;
+  --cor-quartenaria-laranja: #FF7E33;
+  --cor-quintenaria-bege: #EFD1AC;
+  --cor-quintenaria-bege2: #E7B77C;
+  --cor-background: #F0F2F2;
+  --cor-fonte-titulos-texto1: #0A1E26;
+  --cor-fonte-titulos2: #F25C05;
+  --cor-fonte-titulos3: #03997E;
+  --cor-fonte-texto1: #FFFFFF;
+  --cor-fonte-hover: #ce9b5d;
+  --cor-fonte-botoes1: #FF7E33;
+  --cor-fonte-botoes2: #04BF9D;
+  --cor-card-flip:#F28D52;
+  --poppins-font: "Poppins", sans-serif;
+  --Montserrat-Alternates-font:"Montserrat Alternates", sans-serif;
 }
 
 /*------*/
