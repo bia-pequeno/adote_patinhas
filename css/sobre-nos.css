@@ -38,6 +38,18 @@
     /* background-color: var(--cor-background); */
 
 }
+/*------*/
+body::-webkit-scrollbar {
+  width: 5px; /* largura dentro do scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--cor-background);/* cor da área de rastreamento*/
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;/* arredondamento do scroll thumb */
+  border: 3px solid var(--cor-primaria-marrom);  /* cria preenchimento ao redor do scroll thumb */
+}
+/*---------*/
   body{
     background-color: var(--cor-background);
   }

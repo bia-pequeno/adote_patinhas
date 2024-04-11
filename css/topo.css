@@ -208,7 +208,7 @@ footer {
 @media only screen and (max-width: 767px) {
   header {
     position: relative;
-    height: 55px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
   }
@@ -216,7 +216,7 @@ footer {
     display: none;
   }
   #logo {
-    width: 180px;
+    width: 137px;
   }
   #barrad {
     display: flex;

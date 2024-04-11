@@ -877,7 +877,7 @@ header a:hover {
   .bt2{
     height: 40px;
     width: 160px;
-    /* margin-bottom: 14vh; */
+    margin-bottom: 31vh;
   }
 }
   
@@ -894,7 +894,7 @@ header a:hover {
       justify-content: center;
       img{
         width: 100vw;
-        margin-right: 60vw;
+        margin-right: 40vw;
 
       } 
     }
